@@ -6,7 +6,8 @@ var userChoice = []
 for(var i = 0; i < items.length; i++) {
   items[i].addEventListener("click", function() {
     this.id = "x"
-    userChoice.push(this.id) 
+    userChoice.push(this.id)
+     
 
     // randomChoice = options[Math.floor(Math.random() * options.length)]
     // alert(`You picked ${this.id}`)
