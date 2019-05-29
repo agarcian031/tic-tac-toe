@@ -1,0 +1,43 @@
+.game-container{
+  display: flex; 
+  justify-content: center;
+}
+
+header {
+  padding: 12px;
+
+}
+
+header>h1 {
+  text-align: center;
+  font-family: Rock Salt, 'Times New Roman', Times, serif;
+}
+
+.border-box {
+  border: 2px solid black; 
+  height: 200px; 
+  width: 200px; 
+  text-align: center; 
+  margin: 0 auto; 
+
+}
+.col {
+  /* flex: 1; */
+  flex-direction: row; 
+  justify-content: center; 
+
+}
+
+.border-box:hover {
+ cursor: pointer;
+}
+
+
+
+.blue-container {
+  background: blue; 
+}
+
+.red-container {
+  background: red; 
+}
