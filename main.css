@@ -28,6 +28,27 @@ header>h1 {
   padding: 20px;  
 }
 
+/* RESET BUTTON  */
+.controls {
+  margin: 20px auto;
+  position: relative;
+  text-align: center;
+}
+
+.controls > button {
+  border-radius: 20px;
+  font-weight: bold; 
+  font-size: 125%;
+  padding: 15px 13px;
+  border: 3px solid #333; 
+}
+
+.controls > button:hover {
+  cursor: pointer; 
+  background: #333; 
+  color: #fff; 
+}
+
 /* GAME CONTAINER */
 .game-container{
   display: flex; 
