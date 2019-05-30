@@ -35,6 +35,7 @@ function checkWin()
       if(combo[0].player === combo[1].player && combo[1].player === combo[2].player)
     {
       // Will fill the empty p tag with text. Not specific to player 1 or 2, but works on the winner. 
+      winning_p.classList.add("swing-in-top-bck")
       winning_p.innerHTML = "We have a winner!"
     //  console.log('WIN')
      return
