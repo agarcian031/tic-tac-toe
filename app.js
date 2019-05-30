@@ -1,5 +1,5 @@
 var items = document.getElementsByClassName("box")
-var user_choice_p = document.querySelector(".user-choice > p"); 
+var winning_p = document.querySelector(".winning-container > p"); 
 var player1 = true
 
 var winAnswers = [
@@ -34,7 +34,8 @@ function checkWin()
       // check to see if all of the cells in a combo are equal, if so the game is won!
       if(combo[0].player === combo[1].player && combo[1].player === combo[2].player)
     {
-     console.log('WIN')
+      winning_p.innerHTML = "We have a winner!"
+    //  console.log('WIN')
      return
     }
     }
