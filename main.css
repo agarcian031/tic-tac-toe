@@ -1,3 +1,6 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
 /* Utility Classes */
 * {
   margin: 0; 
@@ -72,8 +75,16 @@ header>h1 {
 
 }
 
+.col > .box {
+  font-family: Permanent Marker, 'Times New Roman', Times, serif; 
+  font-size: 90px; 
+  padding: 25px; 
+  /* width: 100%;  */
+}
+
 .border-box:hover {
  cursor: pointer;
+ box-shadow: inset 0 0 20px #333; 
 }
 
 
