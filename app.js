@@ -17,10 +17,10 @@ for(var i = 0; i < items.length; i++) {
 items[i].addEventListener("click", function() {  
     
     // if player 1 print x if player 2 print o
-    player1 ? this.player = 'X' : this.player = 'O'
-    this.innerHTML = this.player
+    player1 ? this.player = 'X' : this.player = 'O';
+    this.innerHTML = this.player;
     // toggle the current player
-    player1 = !player1
+    player1 = !player1;
     checkWin();
 })
 }
@@ -35,8 +35,16 @@ function checkWin()
       if(combo[0].player === combo[1].player && combo[1].player === combo[2].player)
     {
       // Will fill the empty p tag with text. Not specific to player 1 or 2, but works on the winner. 
-      winning_p.classList.add("swing-in-top-bck")
-      winning_p.innerHTML = "We have a winner!"
+      winning_p.classList.add("swing-in-top-bck");
+      winning_p.innerHTML = "We have a winner!";
+      
+
+      for(var i = 0; i < items.length; i++) {
+        if (items[i].player !== combo[0].player){
+          items[i].innerHTML = "";
+        };
+      }
+
     //  console.log('WIN')
      return
     }
